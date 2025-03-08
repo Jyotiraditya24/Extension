@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zen Focus</title>
+  <title>Focus Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 250px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    input, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <h2>Hello form extension</h2>
-    <button id="clickBtn">Click Me</button>
-    <script src="popup.js"></script>
+  <h3>Focus Mode</h3>
+
+  <label>Allowed Websites (one per line):</label>
+  <textarea id="websites" rows="5" placeholder="example.com"></textarea>
+
+  <button id="saveBtn">Save Websites</button>
+  <button id="toggleFocus">Turn ON Focus Mode</button>
+
+  <script src="popup.js"></script>
 </body>
 </html>
